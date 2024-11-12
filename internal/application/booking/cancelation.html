@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+				<html lang="de">
+				<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>FeWoServ Stornierung</title>
+				</head>
+				<body style="font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f7f7f7;">
+				<div class="email-container" style="max-width: 600px; margin: 20px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+					<img src="{{.FE_DESTINATION}}/FeWoServ_logo.png" class="logo" style="width: 45%; margin-left: -1.5em;" />
+					<h1 style="color: #333333;">Stornierung deiner Buchung</h1>
+					<p>Hallo <span class="name-placeholder" style="font-weight: bold;">{{.NAME}}</span>,</p>
+					<p>mit bedauern müssen wir dir Mitteilen, dass wir deine Buchung (<span class="registration-link" style="color: #007BFF; text-decoration: none;">{{.ID}}</span>) für die Ferienwohnung <a href="{{.FE_DESTINATION}}/apartment/{{.APARTMENT_ID}}" style="color: #007BFF; text-decoration: none;">{{.APARTMENT_NAME}}</a> stornieren mussten.</p>
+					<br/>
+					<p>Solltest du Fragen zu der Stornierung haben, stehe wir dir gerne zur Verfügung.</p>
+					<p>Beste Grüße,</p>
+					<br/>
+					<p>Das FeWoServ Team</p>
+				</div>
+				
+				<!-- Footer -->
+				<div class="footer" style="text-align: center; color: #a5a5a5; font-size: small;">
+					<h4>FeWoServ</h4>
+					<p>FeWoServ Andreas Jakob</p>
+					<p>Gribelierstrasse 12</p>
+					<p>3954 Leukerbad</p>
+					<p>info@fewoserv.com</p>
+					<hr/>
+					<div class="footerLinks">
+					<a href="{{.FE_DESTINATION}}/impressum" style="font-size: x-small; text-decoration: none; padding-right: 1em; color: black;">Impressum</a>
+					<a href="{{.FE_DESTINATION}}/termsOfCondition" style="font-size: x-small; text-decoration: none; padding-right: 1em; color: black;">Buchungsinformationen</a>
+					</div>
+				</div>
+				</body>
+				</html>
